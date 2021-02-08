@@ -1,0 +1,25 @@
+@import '../../fonts/fonts.scss';
+@import '../scss/container.scss';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'GOST UI Regular', sans-serif;
+    
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #F4F7FB;
+}
+p {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}

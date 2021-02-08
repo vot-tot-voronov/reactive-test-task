@@ -1,0 +1,28 @@
+@font-face {
+    font-family:'GOST UI Regular';
+    src: url('GOST UI 2.eot');
+	src: url('GOST UI 2.eot?#iefix') format('embedded-opentype'),
+		url('GOST UI 2.woff2') format('woff2'),
+		url('GOST UI 2.woff') format('woff'),
+		url('GOST UI 2.ttf') format('truetype'),
+		url('GOST UI 2.otf') format('opentype'),
+		url('GOST UI 2.svg#GOST UI 2') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-F6CE;
+}
+@font-face {
+    font-family:'SF Pro Display';
+    src: url('SF Pro Display Bold.eot');
+	src: url('SF Pro Display Bold.eot?#iefix') format('embedded-opentype'),
+		url('SF Pro Display Bold.woff2') format('woff2'),
+		url('SF Pro Display Bold.woff') format('woff'),
+		url('SF Pro Display Bold.ttf') format('truetype'),
+		url('SF Pro Display Bold.otf') format('opentype'),
+		url('SF Pro Display Bold.svg#SF Pro Display Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}

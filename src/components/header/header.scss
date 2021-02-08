@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #3684E2;
+    height: 8.8rem;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__services {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        display: block;
+    }
+    &__source-descr {
+        font-weight: bold;
+        color: #fff;
+        margin-left: 2.1rem;
+
+    }
+    &__user {
+        display: flex;
+        align-items: center;
+    }
+    &__user-logo {
+        display: block;
+        width: 1.8rem;
+        height: 2rem;
+    }
+    &__user-descr {
+        &:not(:last-child) {
+            margin-left: 1.5rem;
+            margin-right: 2.8rem;
+        }
+        font-weight: normal;
+        color: #fff;
+    }
+}
