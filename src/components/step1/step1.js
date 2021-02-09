@@ -1,5 +1,4 @@
 import React from 'react';
-import './step1.scss';
 
 import {useForm} from 'react-hook-form';
 import {useHistory} from 'react-router-dom';
@@ -18,11 +17,11 @@ const Step1 = () => {
         }
     });
     const watchInputs = watch("legalStatus");
-    
     const history = useHistory();
     
     const onSubmit = (data) => {
         const newData = {...data, currentStep: currentStep + 1};
+        console.log(newData)
         setValues(newData);
         history.push('/step2');
     }

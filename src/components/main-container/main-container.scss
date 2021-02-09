@@ -9,6 +9,7 @@
         align-items: center;
         padding-left: 1.6rem;
         height: 8rem;
+        cursor: pointer;
         &__round {
             display: flex;
             justify-content: center;
@@ -16,17 +17,23 @@
             width: 4.8rem;
             height: 4.8rem;
             border-radius: 50%;
-            background-color: #0061D9;
+            background-color: #BCC3CA;
             margin-right: 3.2rem;
             font-size: 2.2rem;
             line-height: 2.8rem;
             color: #fff;
+            &_active {
+                background-color: #0061D9;
+            }
         }
         &__title {
             font-family: 'SF Pro Display', sans-serif;
             font-size: 2.1rem;
             line-height: 3.2rem;
-            color: #3B4256;
+            color: #BCC3CA;
+            &_active {
+                color: #3B4256;
+            }
         }
     }
 }

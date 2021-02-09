@@ -6,3 +6,8 @@
     background-color: transparent;
     cursor: pointer;
 }
+@mixin form-position {
+    max-width: 44.8rem;
+    width: 100%;
+    margin-left: 9.6rem;
+}

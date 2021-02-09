@@ -1,7 +1,6 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
 import {useData} from '../data-context/DataContext';
-import './main-container.scss'
 
 const MainContainer = ({children, step, title}) => {
     const history = useHistory();
@@ -14,18 +13,30 @@ const MainContainer = ({children, step, title}) => {
         } else if (currentStep === 3 && step === 2) {
             setValues({currentStep: step});
             history.push('/step2');
+        } else if (currentStep === 1 && step <= 1) {
+            history.push('/');
         }
     }
+    const activeDefiner = currentStep === step ?
+    {
+        roundColor: "form-step__round form-step__round_active",
+        titleColor: "form-step__title form-step__title_active"
+    } :
+    {
+        roundColor: "form-step__round",
+        titleColor: "form-step__title"
+    };
+    const lastMarginBottom = step === 3 ? "last-container_margin-bottom" : "";
     return (
-        <div className="container">
+        <section className={`container ${lastMarginBottom}`}>
             <div className="form-container">
-                <div className="form-step">
-                    <div className="form-step__round">{step}</div>
-                    <h2 onClick={goBackHandler} className="form-step__title">{title}</h2>
+                <div className="form-step" onClick={goBackHandler}>
+                    <div className={activeDefiner.roundColor}>{step}</div>
+                    <h2 className={activeDefiner.titleColor}>{title}</h2>
                 </div>
                 {children}
             </div>
-        </div>
+        </section>
     );
 };
 

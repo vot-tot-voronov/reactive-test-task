@@ -1,5 +1,4 @@
 import React from 'react';
-import './description.scss';
 
 import Emblem from '../../images/emblem.png';
 

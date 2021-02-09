@@ -1,7 +1,5 @@
 .form-status {
-    max-width: 44.8rem;
-    width: 100%;
-    margin-left: 9.6rem;
+    @include form-position;
     &__block {
         width: 100%;
         border-radius: .4rem;
