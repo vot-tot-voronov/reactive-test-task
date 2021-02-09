@@ -5,7 +5,7 @@ import './app.scss';
 
 import Header from '../header';
 import Description from '../description';
-// import {Step1} from './components/step1';
+import Step1 from '../step1';
 // import {Step2} from './components/step2';
 // import {Step3} from './components/step3';
 // import {Result} from './components/result';
@@ -17,14 +17,14 @@ function App() {
     <>
       <Header />
       <Description />
-      {/* <Router>
+      <Router>
         <Switch>
           <Route exact path='/' component={Step1} />
-          <Route path='/step2' component={Step2} />
+          {/* <Route path='/step2' component={Step2} />
           <Route path='/step3' component={Step3} />
-          <Route path='/result' component={Result} />
+          <Route path='/result' component={Result} /> */}
         </Switch>
-      </Router> */}
+      </Router>
     </>
   );
 }

@@ -1,9 +1,13 @@
 .description {
     display: flex;
-    height: 200vh;
+    margin-top: 8.8rem;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid rgba(59, 66, 86, 0.3);
     &__text-block {
         max-width: 73.6rem;
         width: 100%;
+        margin-right: 12.6rem;
     }
     &__title {
         font-family: 'SF Pro Display', sans-serif;
@@ -15,5 +19,21 @@
         font-size: 1.8rem;
         line-height: 2.4rem;
         color: #3B4256;
+        margin-top: 2.4rem;
+    }
+    &__service-block p {
+        font-size: 1.4rem;
+        color: #3B4256;
+        line-height: 2rem;
+    }
+    &__logo {
+        margin-bottom: 1.6rem;
+    }
+    &__logo-descr {
+        font-weight: 700;
+        margin-bottom: .8rem;
+    }
+    &__service-provider {
+
     }
 }
