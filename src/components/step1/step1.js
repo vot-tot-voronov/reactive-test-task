@@ -31,20 +31,24 @@ const Step1 = () => {
         <>
         <MainContainer currentStep={currentStep} step={1} title={'Выбор заявителя'}>
             <form onSubmit={handleSubmit(onSubmit)} className="form-status">
-                <input id="individual" type="radio" value="individual" name="legalStatus" 
-                    defaultChecked={!watchInputs && true} ref={register({ required: true })}
-                />
-                <label htmlFor="individual">
-                    <span className="form-status__label">Физическое лицо</span>
-                    <span className="form-status__label form-status__label_sign">Константинов К. К.</span>
-                </label>
-                <input id="organization" type="radio" value="organization" name="legalStatus" 
-                    ref={register({ required: true })}
-                />
-                <label htmlFor="organization">
-                    <span className="form-status__label">Юридическое лицо</span>
-                    <span className="form-status__label form-status__label_sign">ООО Константиновский</span>
-                </label>
+                <div className="form-status__block">
+                    <input id="individual" type="radio" value="individual" name="legalStatus" 
+                        defaultChecked={!watchInputs && true} ref={register({ required: true })}
+                    />
+                    <label htmlFor="individual">
+                        <span className="form-status__label">Константинопольский К.К.</span>
+                        <span className="form-status__label form-status__label_sign">Физическое лицо.</span>
+                    </label>
+                </div>
+                <div className="form-status__block">
+                    <input id="organization" type="radio" value="organization" name="legalStatus" 
+                        ref={register({ required: true })}
+                    />
+                    <label htmlFor="organization">
+                        <span className="form-status__label">ООО «Константинополь»</span>
+                        <span className="form-status__label form-status__label_sign">Юридическое лицо</span>
+                    </label>
+                </div>
                 <PrimaryButton>Продолжить</PrimaryButton>
             </form>
         </MainContainer>

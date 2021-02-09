@@ -3,11 +3,12 @@
     max-width: 73.6rem;
     width: 100%;
     background-color: #fff;
+    border-radius: .4rem;
     .form-step {
         display: flex;
         align-items: center;
         padding-left: 1.6rem;
-        padding-top: 1.6rem;
+        height: 8rem;
         &__round {
             display: flex;
             justify-content: center;
