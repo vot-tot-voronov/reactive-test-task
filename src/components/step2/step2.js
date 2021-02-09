@@ -95,28 +95,41 @@ const Step2 = () => {
                         <span>Документ</span>
                     </label>
                 </div>
-                
-                <input id="series" type="number" name="series" ref={register} />
-                <label htmlFor="series">
-                    <span>Серия</span>
-                </label>
-                <input id="number" type="number" name="number" ref={register} />
-                <label htmlFor="number">
-                    <span>Номер</span>
-                </label>
-                <input id="whenGiven" type="number" name="whenGiven" ref={register} />
-                <label htmlFor="whenGiven">
-                    <span>Когда выдан</span>
-                    <span>День</span>
-                </label>
-                <input id="monthsGiven" type="number" name="monthsGiven" ref={register} />
-                <label htmlFor="monthsGiven">
-                    <span>Месяц</span>
-                </label>
-                <input id="yearGiven" type="number" name="yearGiven" ref={register} />
-                <label htmlFor="yearGiven">
-                    <span>Год</span>
-                </label>
+                <div className="form-about__series-number">
+                    <div className="form-about__passbort-input">
+                        <input id="series" type="number" name="series" ref={register} />
+                        <label htmlFor="series" className="form-about__label">
+                            <span>Серия</span>
+                        </label>
+                    </div>
+                    <div className="form-about__passbort-input">
+                        <input id="number" type="number" name="number" ref={register} />
+                        <label htmlFor="number" className="form-about__label">
+                            <span>Номер</span>
+                        </label>
+                    </div>
+                </div>
+                <p className="form-about__when">Когда выдан</p>
+                <div className="form-about__date-block">
+                    <div className="form-about__date-input">
+                        <input id="whenGiven" type="number" name="whenGiven" ref={register} />
+                        <label htmlFor="whenGiven" className="form-about__label">
+                            <span>День</span>
+                        </label>
+                    </div>
+                    <div className="form-about__date-input">
+                        <input id="monthsGiven" type="number" name="monthsGiven" ref={register} />
+                        <label htmlFor="monthsGiven" className="form-about__label">
+                            <span>Месяц</span>
+                        </label>
+                    </div>
+                    <div className="form-about__date-input">
+                        <input id="yearGiven" type="number" name="yearGiven" ref={register} />
+                        <label htmlFor="yearGiven" className="form-about__label">
+                            <span>Год</span>
+                        </label>
+                    </div>
+                </div>
                 <PrimaryButton>Продолжить</PrimaryButton>
             </form>
         </MainContainer>
