@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/vot-tot-voronov/reactive-test-task/static/css/main.0d78fcb7.chunk.css",
+    "main.js": "/vot-tot-voronov/reactive-test-task/static/js/main.a8999eb9.chunk.js",
+    "main.js.map": "/vot-tot-voronov/reactive-test-task/static/js/main.a8999eb9.chunk.js.map",
+    "runtime-main.js": "/vot-tot-voronov/reactive-test-task/static/js/runtime-main.f8e7e6af.js",
+    "runtime-main.js.map": "/vot-tot-voronov/reactive-test-task/static/js/runtime-main.f8e7e6af.js.map",
+    "static/js/2.445413d2.chunk.js": "/vot-tot-voronov/reactive-test-task/static/js/2.445413d2.chunk.js",
+    "static/js/2.445413d2.chunk.js.map": "/vot-tot-voronov/reactive-test-task/static/js/2.445413d2.chunk.js.map",
+    "index.html": "/vot-tot-voronov/reactive-test-task/index.html",
+    "static/css/main.0d78fcb7.chunk.css.map": "/vot-tot-voronov/reactive-test-task/static/css/main.0d78fcb7.chunk.css.map",
+    "static/js/2.445413d2.chunk.js.LICENSE.txt": "/vot-tot-voronov/reactive-test-task/static/js/2.445413d2.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/vot-tot-voronov/reactive-test-task/static/media/SF Pro Display Bold.f88f6e71.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f8e7e6af.js",
+    "static/js/2.445413d2.chunk.js",
+    "static/css/main.0d78fcb7.chunk.css",
+    "static/js/main.a8999eb9.chunk.js"
+  ]
+}
