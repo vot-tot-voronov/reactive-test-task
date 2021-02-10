@@ -1,4 +1,4 @@
-# Тестовое задание компании Reactive
+# Тестовое задание компании от компании Reactive Media на должность Frontend разработчика.
 
 ## Front-end `(ReactJS/React-Router/SCSS/React-Hook-Form/Yup/Webpack)`
 
