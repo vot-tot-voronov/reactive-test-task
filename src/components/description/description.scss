@@ -4,10 +4,19 @@
     padding-top: 8rem;
     padding-bottom: 4rem;
     border-bottom: 1px solid rgba(59, 66, 86, 0.3);
+    @include respond(phone) {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 4rem;
+    }
     &__text-block {
         max-width: 73.6rem;
         width: 100%;
         margin-right: 12.6rem;
+        @include respond(phone) {
+            margin-right: 4rem;
+            margin: 0 auto;
+        }
     }
     &__title {
         font-family: 'SF Pro Display', sans-serif;

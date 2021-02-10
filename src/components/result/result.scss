@@ -3,13 +3,24 @@
     @include paragraph18;
     max-width: 54.4rem;
     margin-bottom: 18.4rem;
+    @include respond(phone) {
+        margin-bottom: 10rem;
+    }
     & span {
         font-weight: 700;
     }
     &__text {
+        @include respond(phone) {
+            padding: 0 1rem;
+        }
         &_last {
             margin-top: 2.4rem;
             margin-bottom: 2.4rem;
+        }
+    }
+    &__buttons {
+        @include respond(phone) {
+            text-align: center;
         }
     }
 }

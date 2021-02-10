@@ -14,8 +14,10 @@ const Result = () => {
                     Если у вас остались вопросы по оказанию услуги, пожалуйста, обращайтесь по телефону 
                     +7 (342) 123-45-67.
                 </p>
-                <PrimaryButton mod="btn_back">Вернуться в каталог</PrimaryButton>
-                <PrimaryButton mod="btn_cabinet">Перейти в личный кабинет</PrimaryButton>
+                <div className="result__buttons">
+                    <PrimaryButton mod="btn_back">Вернуться в каталог</PrimaryButton>
+                    <PrimaryButton mod="btn_cabinet">Перейти в личный кабинет</PrimaryButton>
+                </div>
             </div>
         </MainContainer>
     );

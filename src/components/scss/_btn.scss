@@ -18,6 +18,11 @@
         max-width: 25.6rem;
         margin-right: 3.2rem;
         margin-bottom: 4rem;
+        @include respond(phone) {
+            width: 45%;
+            margin-right: 2rem;
+            font-size: 1.7rem;
+        }
     }
     &_cabinet {
         max-width: 25.6rem;
@@ -25,5 +30,9 @@
         color: #0050B2;
         border: .1rem solid rgba(0, 80, 178, 0.5);
         margin-bottom: 4rem;
+        @include respond(phone) {
+            width: 45%;
+            font-size: 1.7rem;
+        }
     }
 }

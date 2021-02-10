@@ -8,6 +8,9 @@
     align-items: center;
     background-color: #3684E2;
     height: 8.8rem;
+    @include respond(phone) {
+        height: 11.8rem;
+    }
     &__content {
         display: flex;
         justify-content: space-between;
@@ -16,6 +19,9 @@
     &__services {
         display: flex;
         align-items: center;
+        @include respond(phone) {
+            width: 40%;
+        }
     }
     &__logo {
         display: block;
@@ -24,6 +30,10 @@
         font-weight: bold;
         color: #fff;
         margin-left: 2.1rem;
+        @include respond(phone) {
+            margin-left: 1rem;
+            font-size: 1.7rem;
+        }
     }
     &__user {
         display: flex;
@@ -38,8 +48,15 @@
         &:not(:last-child) {
             margin-left: 1.5rem;
             margin-right: 2.8rem;
+            @include respond(phone) {
+                margin-left: 1.0rem;
+                margin-right: 1.0rem;
+            }
         }
         font-weight: normal;
         color: #fff;
+        @include respond(phone) {
+            font-size: 1.5rem;
+        }
     }
 }

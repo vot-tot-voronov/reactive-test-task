@@ -1,3 +1,14 @@
+@import '../../fonts/fonts.scss';
+@import '../scss/mixins.scss';
+@import '../scss/container.scss';
+@import '../scss/btn.scss';
+@import '../header/header.scss';
+@import '../description/description.scss';
+@import '../main-container/main-container.scss';
+@import '../step1/step1.scss';
+@import '../step2/step2.scss';
+@import '../step3/step3.scss';
+@import '../result/result.scss';
 *,
 *::after,
 *::before {
@@ -9,6 +20,20 @@
 html {
     font-size: 62.5%;
     font-family: 'GOST UI Regular', sans-serif;
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+    
+    @include respond(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    @include respond(phone) { // width < 600?
+        font-size: 37.5%; //1 rem = 6px, 6/16 = 37.5%
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
     
 }
 
@@ -34,14 +59,5 @@ a:focus {
 .swal2-html-container {
     font-size: 1.8rem;
 }
-@import '../../fonts/fonts.scss';
-@import '../scss/mixins.scss';
-@import '../scss/container.scss';
-@import '../scss/btn.scss';
-@import '../header/header.scss';
-@import '../description/description.scss';
-@import '../main-container/main-container.scss';
-@import '../step1/step1.scss';
-@import '../step2/step2.scss';
-@import '../step3/step3.scss';
-@import '../result/result.scss';
+
+
