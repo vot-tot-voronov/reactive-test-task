@@ -11,3 +11,20 @@
     width: 100%;
     margin-left: 9.6rem;
 }
+@mixin block-radio-checkbox {
+    &__block {
+        width: 100%;
+        border-radius: .4rem;
+        position: relative;
+        margin-bottom: 1.6rem;
+        z-index: 1;
+    }
+}
+@mixin block-radio-checkbox-font {
+    &__label {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+        color: #3B4256;
+    }
+}
