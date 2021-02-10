@@ -30,7 +30,6 @@ const Step3 = () => {
         setValues(newData);
         history.push('/result');
     }
-
     return (
         <>
         <MainContainer step={1} title={'Выбор заявителя'}></MainContainer>

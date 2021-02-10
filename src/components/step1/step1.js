@@ -24,7 +24,6 @@ const Step1 = () => {
         setValues(newData);
         history.push('/step2');
     }
-
     return (
         <>
         <MainContainer currentStep={currentStep} step={1} title={'Выбор заявителя'}>

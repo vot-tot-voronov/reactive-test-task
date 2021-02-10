@@ -4,7 +4,6 @@ const DataContext = createContext();
 
 export const DataProvider = ({children}) => {
     const [data, setData] = useState({currentStep: 1});
-
     const setValues = (values) => {
         setData(prevData => {
             return {
@@ -13,12 +12,10 @@ export const DataProvider = ({children}) => {
             }
         });
     };
-
     return (
         <DataContext.Provider value={{data, setValues}}>
             {children}
         </DataContext.Provider>
     );
 };
-
 export const useData = () => useContext(DataContext);

@@ -1,17 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import './app.scss';
-
 import Header from '../header';
 import Description from '../description';
 import Step1 from '../step1';
 import Step2 from '../step2';
 import Step3 from '../step3';
 import Result from '../result';
-
-
-
 function App() {
   return (
     <>
@@ -28,5 +23,4 @@ function App() {
     </>
   );
 }
-
 export default App;
