@@ -5,6 +5,9 @@
     @include respond(tab-land) {
         padding: 0 2rem;
     }
+    @include respond(phone) {
+        padding: 0 1rem;
+    }
 }
 .last-container_margin-bottom {
     margin-bottom: 29rem;
