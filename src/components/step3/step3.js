@@ -10,19 +10,14 @@ import Swal from 'sweetalert2';
 
 const Step3 = () => {
     const {data, setValues} = useData();
-    const { register, handleSubmit, watch} = useForm({
+    const { register, handleSubmit} = useForm({
         defaultValues: {
             agreeWithRules: data.agreeWithRules,
             notificated: data.notificated
         }
     });
 
-    const wereChecked = watch(['agreeWithRules', 'notificated']);
-    console.log("wereChecked", wereChecked);
-
     const history = useHistory();
-
-    
     const {currentStep} = data;
     
     const onSubmit = (data) => {
@@ -84,7 +79,7 @@ const Step3 = () => {
                         Пожалуйста, еще раз внимательно проверьте все данные перед отправкой
                     </p>
                 </div>
-                <PrimaryButton>Отправить</PrimaryButton>
+                <PrimaryButton mod="btn_send">Отправить</PrimaryButton>
                 <div className="form-status__block">
                     <p className="form-agree__agreements">
                         Нажимая кнопку «Отправить», вы соглашаетесь с 

@@ -14,4 +14,16 @@
     &_send {
         margin-bottom: 1.6rem;
     }
+    &_back {
+        max-width: 25.6rem;
+        margin-right: 3.2rem;
+        margin-bottom: 4rem;
+    }
+    &_cabinet {
+        max-width: 25.6rem;
+        background-color: #fff;
+        color: #0050B2;
+        border: .1rem solid rgba(0, 80, 178, 0.5);
+        margin-bottom: 4rem;
+    }
 }

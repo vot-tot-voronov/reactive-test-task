@@ -8,7 +8,7 @@ import Description from '../description';
 import Step1 from '../step1';
 import Step2 from '../step2';
 import Step3 from '../step3';
-// import {Result} from './components/result';
+import Result from '../result';
 
 
 
@@ -22,7 +22,7 @@ function App() {
           <Route exact path='/' component={Step1} />
           <Route path='/step2' component={Step2} />
           <Route path='/step3' component={Step3} />
-          {/* <Route path='/result' component={Result} /> */}
+          <Route path='/result' component={Result} />
         </Switch>
       </Router>
     </>

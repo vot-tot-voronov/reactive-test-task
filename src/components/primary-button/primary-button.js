@@ -1,4 +1,9 @@
 import React from 'react';
-const PrimaryButton = ({children, props}) => <button className="btn btn_send">{children}</button>
+const PrimaryButton = ({children, mod}) => {
+    const modificator = mod !== undefined ? mod : "";
+    return (
+        <button className={`btn ${modificator}`}>{children}</button>
+    );
+};
 
 export default PrimaryButton;

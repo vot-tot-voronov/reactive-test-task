@@ -12,9 +12,7 @@
         &-li {
             position: relative;
             list-style: none;
-            font-size: 1.8rem;
-            line-height: 2.4rem;
-            color: #3B4256;
+            @include paragraph18;
             margin-top: .8rem;
             padding-left: 1.2rem;
             &::before {
@@ -51,9 +49,6 @@
         font-size: 1.4rem;
         line-height: 2rem;
         color: #3B4256;
-        &_link {
-            color: #0061D9;
-        }
     }
 }
 

@@ -1,0 +1,15 @@
+.result {
+    @include form-position;
+    @include paragraph18;
+    max-width: 54.4rem;
+    margin-bottom: 18.4rem;
+    & span {
+        font-weight: 700;
+    }
+    &__text {
+        &_last {
+            margin-top: 2.4rem;
+            margin-bottom: 2.4rem;
+        }
+    }
+}

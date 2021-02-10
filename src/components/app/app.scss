@@ -25,16 +25,14 @@ a:link,
 a:visited {
     text-decoration: none;
     cursor: pointer;
+    color: #0061D9;
 }
 a:active,
 a:focus {
     outline: none;
 }
 .swal2-html-container {
-    font-size: 1.4rem;
-}
-.swal2-styled.swal2-confirm {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 @import '../../fonts/fonts.scss';
 @import '../scss/mixins.scss';
@@ -46,3 +44,4 @@ a:focus {
 @import '../step1/step1.scss';
 @import '../step2/step2.scss';
 @import '../step3/step3.scss';
+@import '../result/result.scss';
